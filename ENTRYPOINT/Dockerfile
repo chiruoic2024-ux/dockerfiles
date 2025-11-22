@@ -1,4 +1,4 @@
 FROM almalinux:9
 #ENTRYPOINT ["ping", "facebook.com"]
-ENTRYPOINT [ "ping" ]
+ENTRYPOINT ["ping"]
 CMD ["google.com"]
