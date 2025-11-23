@@ -2,5 +2,6 @@ ARG VERSION
 FROM almalinux:${VERSION:-9}
 ARG COURSE = "DOCKER" \
     TRAINER ="CHIRANJEEVI"
-RUN echo "Course ${COURSE}, Trainer ${TRAINER}"
+ENV COURSE = ${COURSE}
+RUN echo "Course: ${COURSE}, Trainer: ${TRAINER}, Version: ${VERSION}"
 CMD ["sleep", "1000"]
